@@ -42,7 +42,7 @@ body {
 }
 
 .sectionPadding {
-  padding: 0 1rem;
+  padding: 4rem 1rem 0;
 }
 
 .sectionTitle {
@@ -358,6 +358,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  margin: 2rem 0 1rem;
 }
 .experienceCategories button {
   padding: 0.3rem 0.7rem;
@@ -370,8 +371,32 @@ main {
 }
 
 .experienceContainer {
-  border-radius: 10px;
-  border: 1px solid var(--borderColor);
+  color: var(--textColor);
+}
+
+.expBlock {
+  margin-bottom: 1.5rem;
+}
+
+.expTag {
+  font-size: var(--tagFontSize);
+  background: var(--accentColor);
+  color: var(--textColor);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+}
+
+.expTitle {
+  font-size: var(--subHeading);
+  font-weight: 400;
+  line-height: 1.2em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.expTasks {
+  font-size: var(--textFontSize);
+  list-style: none;
 }
 
 @media (min-width: 375px) {

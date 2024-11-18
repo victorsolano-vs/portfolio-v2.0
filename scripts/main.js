@@ -70,8 +70,23 @@ function renderExperiences(expToRender){
     expToRender.forEach((exp) => {
 
         experienceHTML += `
-            <p>${exp.title}</p>
-            <p style = 'margin-bottom: 1rem;'>${exp.type}</p>
+            <div class="expBlock">
+            <div class = 'tagsContainer'>
+                <span class = 'expTag expDuration'>${exp.duration}</span>
+            </div>
+            <div class="expInfo">
+                <h1 class="expTitle">
+                    ${exp.title}
+                </h1>
+                <ul class="expTasks">
+                    ${exp.description.map((desc) => 
+                        `
+                            <li>${desc}</li>
+                        `
+                    ).join('')}
+                </ul>
+            </div>
+         </div>
         `
     })
 

@@ -1,5 +1,5 @@
 main{
-    min-height: 100vh;
+    min-height: 100dvh;
     padding: 4vh 1.5rem 0;
 
     position: relative;
@@ -130,3 +130,38 @@ main{
     // left: 0;
     // padding: 0.3rem 1.5rem;
 }
+
+
+
+// background blobs
+.blob{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(5vmax);
+    z-index: -99;
+}
+
+.blob1{
+    background: #A259FF;
+    top: 10%;
+    left: -50%;
+    animation: bounce 3s infinite ease-in-out;
+}
+.blob2{
+    background: #77E3A1;
+    bottom: 10%;
+    right: -40%;
+    animation: bounce 4s infinite ease-in-out;
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Start and end at the original position */
+    }
+    50% {
+      transform: translateY(-25px); /* Move 50px upwards */
+    }
+  }

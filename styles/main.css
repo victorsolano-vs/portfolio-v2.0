@@ -3,7 +3,8 @@
   --backgroundColor: rgb(255, 255, 255);
   --borderColor: rgb(205, 205, 205);
   --textColor: rgb(33, 33, 33);
-  --accentColor: rgb(246, 246, 247);
+  --subTextColor: rgb(68, 67, 67);
+  --accentColor: #dbdbdb4d;
   --hoverLinkColor: rgb(100, 99, 99);
   --logoSize: 1rem;
   --mainHeading: 2rem;
@@ -17,6 +18,7 @@
   --backgroundColor: rgb(7, 7, 7);
   --borderColor:#787878;
   --textColor: rgb(255, 255, 255);
+  --subTextColor: rgb(230, 229, 229);
   --accentColor: #2121214d;
   --hoverLinkColor: rgb(209, 209, 209);
 }
@@ -37,6 +39,19 @@ body {
   background: var(--backgroundColor);
   overflow-x: hidden;
   transition: background 0.4s ease;
+}
+
+.sectionPadding {
+  padding: 0 1rem;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  color: var(--textColor);
+  font-weight: 500;
+  max-width: 600px;
+  text-align: left;
+  margin: 0 auto;
 }
 
 @keyframes bounce {
@@ -157,6 +172,7 @@ html {
 main {
   min-height: 100dvh;
   padding: 4vh 1rem 0;
+  overflow-x: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -335,6 +351,27 @@ main {
   bottom: 6%;
   right: -70%;
   animation: bounce 4s infinite ease-in-out;
+}
+
+.experienceCategories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.experienceCategories button {
+  padding: 0.3rem 0.7rem;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-size: var(--tagFontSize);
+  background: var(--accentColor);
+  color: var(--textColor);
+}
+
+.experienceContainer {
+  border-radius: 10px;
+  border: 1px solid var(--borderColor);
 }
 
 @media (min-width: 375px) {

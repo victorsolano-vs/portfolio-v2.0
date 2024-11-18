@@ -5,7 +5,9 @@
     --backgroundColor: rgb(255, 255, 255);
     --borderColor: rgb(205, 205, 205);
     --textColor: rgb(33, 33, 33);
-    --accentColor: rgb(246, 246, 247);
+    --subTextColor: rgb(68, 67, 67);
+    // --accentColor: rgb(246, 246, 247);
+    --accentColor: #dbdbdb4d;
     --hoverLinkColor: rgb(100, 99, 99);
     
 
@@ -24,6 +26,7 @@
     --backgroundColor: rgb(7, 7, 7);
     --borderColor:#787878;
     --textColor: rgb(255, 255, 255);
+    --subTextColor: rgb(230, 229, 229);
     --accentColor: #2121214d;
     --hoverLinkColor: rgb(209, 209, 209);
 }
@@ -48,6 +51,21 @@ body{
     overflow-x: hidden;
     transition: background $transitionDuration ease;
 }
+
+.sectionPadding{
+    padding: 0 1rem;
+}
+
+.sectionTitle{
+    font-size: 24px;
+    color: var(--textColor);
+    font-weight: 500;
+    max-width: 600px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+
 
 @mixin horizontalList{
 

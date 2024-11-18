@@ -1,0 +1,21 @@
+.experienceCategories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    
+    button{
+        padding: 0.3rem 0.7rem;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        font-size: var(--tagFontSize);
+        background: var(--accentColor);
+        color: var(--textColor);
+    }
+}
+
+.experienceContainer{
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+}

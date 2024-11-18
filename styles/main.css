@@ -6,6 +6,7 @@
   --textColor: rgb(33, 33, 33);
   --accentColor: rgb(246, 246, 247);
   --accentColorRGB: 246, 246,247;
+  --hoverLinkColor: rgb(100, 99, 99);
   --logoSize: 1rem;
   --mainHeading: 2rem;
   --tagFontSize: 0.75rem;
@@ -44,17 +45,31 @@ body {
     transform: translateY(-30px); /* Move 50px upwards */
   }
 }
-nav {
-  background: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.3rem 1rem;
+header {
+  padding: 0.4rem 1rem;
   position: fixed;
   z-index: 999;
   width: 100%;
   top: 0;
   left: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav div {
+  flex: 1;
+  display: flex;
+}
+nav div:nth-child(2) {
+  align-items: center;
+  justify-content: center;
+}
+nav div:nth-child(3) {
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .logo {
@@ -347,6 +362,44 @@ main {
   .mainContent {
     height: 100dvh;
   }
+  .navLinks {
+    position: static;
+    opacity: 1;
+    pointer-events: all;
+    background: none;
+    border-bottom: none;
+    flex-direction: row;
+    max-width: fit-content;
+    gap: 3rem;
+  }
+  .navLinks a {
+    padding: 0;
+    font-size: 12px;
+    background: none;
+    transition: color 0.3s ease;
+  }
+  .navLinks a:hover {
+    background: none;
+    color: var(--hoverLinkColor);
+  }
+  .navLinks .mobileContactLink {
+    display: none;
+  }
+  .burgerMenu {
+    display: none;
+  }
+  .contactBtn {
+    display: inline;
+    font-size: 12px;
+    color: var(--textColor);
+    border: 1px solid var(--textColor);
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+  }
+  .contactBtn:hover {
+    transform: scale(0.95);
+  }
 }
 @media (min-width: 1024px) {
   .blob1 {
@@ -356,7 +409,7 @@ main {
   .blob2 {
     right: -15%;
   }
-  nav {
+  header {
     padding: 0.5rem 1rem;
   }
   .lowerNav {

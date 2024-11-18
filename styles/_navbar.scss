@@ -1,18 +1,30 @@
-nav{
-    // @include frostedBackground;
-    background: none;
-    // border-bottom: var(--borderColor) 1px solid;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.3rem 1rem;
-
+header{
+    padding: 0.4rem 1rem;
     position: fixed;
     z-index: 999;
     width: 100%;
     top: 0;
     left: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div{
+        flex: 1;
+        display: flex;
+        &:nth-child(2){
+            align-items: center;
+            justify-content: center;
+        }
+        &:nth-child(3){
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+
 }
 
 .logo{

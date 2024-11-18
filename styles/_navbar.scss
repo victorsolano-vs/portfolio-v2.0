@@ -1,8 +1,8 @@
 nav{
     // @include frostedBackground;
     background-color: var(--backgroundColor);
+    // border-bottom: var(--borderColor) 1px solid;
 
-    border-bottom: var(--borderColor) 1px solid;
     display: flex;
     align-items: center;
     justify-content: space-between;

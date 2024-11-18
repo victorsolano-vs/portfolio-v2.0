@@ -1,6 +1,7 @@
 main{
     min-height: 100dvh;
     padding: 4vh 1.5rem 0;
+    overflow-x: hidden;
 
     position: relative;
 
@@ -11,9 +12,6 @@ main{
 }
 
 .mainContent{
-
-    // background: red;
-
     text-align: center;
     flex: 1;
     width: 100%;
@@ -60,10 +58,20 @@ main{
         justify-content: space-between;
         gap: 0.5rem;
         a{
-            padding: 0.5rem 1rem;
+            padding: 0.5rem;
             border-radius: 0.5rem;
             background: var(--accentColor);
             transition: transform 0.3s ease;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg{
+                $svgSize: 18px;
+                height: $svgSize;
+                width: $svgSize;
+            }
 
             &:hover{
                 transform: scale(0.9);
@@ -76,7 +84,6 @@ main{
 // stack section
 .myStack{
     flex: 1.5;
-
     h3{
         font-weight: 500;
         text-align: center;
@@ -122,14 +129,41 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    // background: green;
     width: 100%;
-    // position: absolute;
-    // bottom: 0;
-    // left: 0;
-    // padding: 0.3rem 1.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
 }
+
+.themeToggle{
+    background: none;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    svg{
+        $svgSize:18px;
+        height: $svgSize;
+        width: $svgSize;
+    }
+
+    &:hover{
+        transform: scale(0.9);
+    }
+}
+
+.location{
+    p{
+        &:nth-child(1){
+            font-size: 10px;
+            margin-bottom: -0.2rem;
+        }
+        &:nth-child(2){
+            font-size: 12px;
+        }
+    }
+}
+
 
 
 
@@ -146,13 +180,13 @@ main{
 .blob1{
     background: #A259FF;
     top: 10%;
-    left: -50%;
+    left: -80%;
     animation: bounce 3s infinite ease-in-out;
 }
 .blob2{
     background: #77E3A1;
-    bottom: 10%;
-    right: -40%;
+    bottom: 6%;
+    right: -70%;
     animation: bounce 4s infinite ease-in-out;
 }
 

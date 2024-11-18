@@ -25,6 +25,7 @@ main{
     h1{
         font-weight: 500;
         font-size: var(--mainHeading);
+        color: var(--textColor);
     }
 
     .roleTags{
@@ -72,6 +73,8 @@ main{
                 $svgSize: 18px;
                 height: $svgSize;
                 width: $svgSize;
+                fill: var(--textColor);
+                
             }
 
             &:hover{
@@ -84,13 +87,13 @@ main{
             &::after{
                 content: attr(data-tooltip); /* Use the data-tooltip attribute's value */
                 position: absolute;
-                top: 110%; 
+                top: 120%; 
                 left: 50%;
                 transform: translateX(-50%);
 
                 font-size: var(--tagFontSize);
-                background-color: black;
-                color: white;
+                background: var(--accentColor);
+                color: var(--textColor);
 
                 padding: 5px 10px;
                 border-radius: 4px;
@@ -109,6 +112,7 @@ main{
 .myStack{
     flex: 1.5;
     h3{
+        color: var(--textColor);
         font-weight: 500;
         font-size: var(--subHeading);
         text-align: center;
@@ -134,13 +138,14 @@ main{
             gap: 0.5rem;
 
             font-size: var(--tagFontSize);
+            color: var(--textColor);
 
             img{
                 $svgSize: 24px;
                 height: $svgSize;
                 width: $svgSize;
             }
-            background: rgba(var(--accentColorRGB), 0.3);
+            background: var(--accentColor);
             padding: 0.4rem 0.6rem;
             border-radius: 0.5rem;
         }
@@ -166,6 +171,7 @@ main{
     cursor: pointer;
 
     svg{
+        fill: var(--textColor);
         $svgSize:18px;
         height: $svgSize;
         width: $svgSize;
@@ -177,6 +183,7 @@ main{
 }
 
 .location{
+    color: var(--textColor);
     p{
         &:nth-child(1){
             font-size: 10px;

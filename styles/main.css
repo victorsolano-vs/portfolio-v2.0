@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --backgroundColor: rgb(255, 255, 255);
-  --textColor: rgb(255, 255, 255);
   --borderColor: rgb(205, 205, 205);
   --textColor: rgb(33, 33, 33);
   --accentColor: rgb(246, 246, 247);
-  --accentColorRGB: 246, 246,247;
   --hoverLinkColor: rgb(100, 99, 99);
   --logoSize: 1rem;
   --mainHeading: 2rem;
@@ -15,8 +13,11 @@
 }
 
 [data-theme=dark] {
-  --backgroundColor: #ffff;
-  --textColor: #ffff;
+  --backgroundColor: rgb(7, 7, 7);
+  --borderColor: rgb(205, 205, 205);
+  --textColor: rgb(255, 255, 255);
+  --accentColor: #2121214d;
+  --hoverLinkColor: rgb(100, 99, 99);
 }
 
 * {
@@ -170,6 +171,7 @@ main {
 .mainContent h1 {
   font-weight: 500;
   font-size: var(--mainHeading);
+  color: var(--textColor);
 }
 .mainContent .roleTags {
   margin: 0 0 0.5rem 0;
@@ -211,6 +213,7 @@ main {
 .mainContent .socialLinks a svg {
   height: 18px;
   width: 18px;
+  fill: var(--textColor);
 }
 .mainContent .socialLinks a:hover::after {
   opacity: 1;
@@ -219,12 +222,12 @@ main {
 .mainContent .socialLinks a::after {
   content: attr(data-tooltip); /* Use the data-tooltip attribute's value */
   position: absolute;
-  top: 110%;
+  top: 120%;
   left: 50%;
   transform: translateX(-50%);
   font-size: var(--tagFontSize);
-  background-color: black;
-  color: white;
+  background: var(--accentColor);
+  color: var(--textColor);
   padding: 5px 10px;
   border-radius: 4px;
   white-space: nowrap;
@@ -237,6 +240,7 @@ main {
   flex: 1.5;
 }
 .myStack h3 {
+  color: var(--textColor);
   font-weight: 500;
   font-size: var(--subHeading);
   text-align: center;
@@ -260,7 +264,8 @@ main {
   justify-content: space-between;
   gap: 0.5rem;
   font-size: var(--tagFontSize);
-  background: rgba(var(--accentColorRGB), 0.3);
+  color: var(--textColor);
+  background: var(--accentColor);
   padding: 0.4rem 0.6rem;
   border-radius: 0.5rem;
 }
@@ -285,6 +290,7 @@ main {
   cursor: pointer;
 }
 .themeToggle svg {
+  fill: var(--textColor);
   height: 18px;
   width: 18px;
 }
@@ -292,6 +298,9 @@ main {
   transform: scale(0.9);
 }
 
+.location {
+  color: var(--textColor);
+}
 .location p:nth-child(1) {
   font-size: 10px;
   margin-bottom: -0.2rem;

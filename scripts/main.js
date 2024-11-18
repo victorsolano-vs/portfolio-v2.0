@@ -1,5 +1,26 @@
 import { experience } from "./objects.js"
 
+// ============ light/dark theme toggle =============
+function initializeTheme() {
+    const themeToggleBtn = document.querySelector('.themeToggle')
+    const body = document.body
+
+            // initialize
+    const savedTheme = localStorage.getItem('theme') || 'light'
+    body.setAttribute('data-theme', savedTheme)
+
+            // toggle theme and save to local storage
+            themeToggleBtn.addEventListener('click', () => {
+                const newTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'
+                body.setAttribute('data-theme', newTheme)
+                localStorage.setItem('theme', newTheme)
+            })
+}
+
+initializeTheme()
+
+
+
 // ============ burger menu animations ============
 const burgerMenu = document.querySelector('.burgerMenu')
 const mobileNav = document.querySelector('.navLinks')

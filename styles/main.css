@@ -157,7 +157,6 @@ html {
 main {
   min-height: 100dvh;
   padding: 4vh 1rem 0;
-  overflow-x: hidden;
   position: relative;
   display: flex;
   flex-direction: column;

@@ -57,12 +57,13 @@ main{
         align-items: center;
         justify-content: space-between;
         gap: 0.5rem;
+
         a{
             padding: 0.5rem;
             border-radius: 0.5rem;
             background: var(--accentColor);
             transition: transform 0.3s ease;
-
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -74,7 +75,30 @@ main{
             }
 
             &:hover{
-                transform: scale(0.9);
+                &::after{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            &::after{
+                content: attr(data-tooltip); /* Use the data-tooltip attribute's value */
+                position: absolute;
+                top: 110%; 
+                left: 50%;
+                transform: translateX(-50%);
+
+                font-size: var(--tagFontSize);
+                background-color: black;
+                color: white;
+
+                padding: 5px 10px;
+                border-radius: 4px;
+                white-space: nowrap;
+                opacity: 1;
+
+                visibility: hidden;
+                transition: opacity 0.2s ease-in-out;
             }
         }
     }

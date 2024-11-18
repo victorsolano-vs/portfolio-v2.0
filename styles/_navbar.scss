@@ -1,6 +1,6 @@
 nav{
     // @include frostedBackground;
-    background-color: var(--backgroundColor);
+    background: none;
     // border-bottom: var(--borderColor) 1px solid;
 
     display: flex;
@@ -19,7 +19,6 @@ nav{
     font-weight: 500;
     font-size: var(--logoSize);
     color: var(--textColor);
-    padding: 0.3rem 0.5rem;
     transition: 
         transform 0.3s ease
     
@@ -86,14 +85,14 @@ nav{
     justify-content: center;
 
     border-radius: 5px;
-    transition: background 0.3s ease;
+    transition: transform 0.3s ease;
 
     svg{
         fill: var(--textColor);
     }
 
     &:hover{
-        background: var(--accentColor);
+        transform: scale(0.9);
     }
 }
 

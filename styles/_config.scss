@@ -16,6 +16,7 @@
     --mainHeading: 2rem;
     --tagFontSize: 0.75rem;
     --textFontSize: 0.875rem;
+    --subHeading: 1.125rem;
 }
 
 [data-theme = 'dark']{
@@ -57,3 +58,12 @@ body{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Start and end at the original position */
+    }
+    50% {
+      transform: translateY(-30px); /* Move 50px upwards */
+    }
+  }

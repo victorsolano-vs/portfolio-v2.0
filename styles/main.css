@@ -10,6 +10,7 @@
   --mainHeading: 2rem;
   --tagFontSize: 0.75rem;
   --textFontSize: 0.875rem;
+  --subHeading: 1.125rem;
 }
 
 [data-theme=dark] {
@@ -35,8 +36,16 @@ body {
   transition: background 0.4s ease;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateY(-30px); /* Move 50px upwards */
+  }
+}
 nav {
-  background-color: var(--backgroundColor);
+  background: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +61,6 @@ nav {
   font-weight: 500;
   font-size: var(--logoSize);
   color: var(--textColor);
-  padding: 0.3rem 0.5rem;
   transition: transform 0.3s ease;
 }
 .logo:hover {
@@ -110,13 +118,13 @@ nav {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .burgerMenu svg {
   fill: var(--textColor);
 }
 .burgerMenu:hover {
-  background: var(--accentColor);
+  transform: scale(0.9);
 }
 
 html {
@@ -125,7 +133,7 @@ html {
 
 main {
   min-height: 100dvh;
-  padding: 4vh 1.5rem 0;
+  padding: 4vh 1rem 0;
   overflow-x: hidden;
   position: relative;
   display: flex;
@@ -163,7 +171,7 @@ main {
 }
 .mainContent .aboutMeText {
   color: var(--textColor);
-  font-size: 0.875rem;
+  font-size: var(--textFontSize);
   max-width: 540px;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -196,12 +204,13 @@ main {
 }
 .myStack h3 {
   font-weight: 500;
+  font-size: var(--subHeading);
   text-align: center;
 }
 
 .stacksContainer {
-  max-width: 460px;
-  margin: 0 auto;
+  max-width: 500px;
+  margin: 0.5rem auto 0 auto;
 }
 .stacksContainer ul {
   list-style: none;
@@ -231,8 +240,7 @@ main {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding: 0.3rem 0;
 }
 
 .themeToggle {
@@ -271,7 +279,7 @@ main {
   background: #A259FF;
   top: 10%;
   left: -80%;
-  animation: bounce 3s infinite ease-in-out;
+  animation: bounce 4s infinite ease-in-out;
 }
 
 .blob2 {
@@ -281,11 +289,104 @@ main {
   animation: bounce 4s infinite ease-in-out;
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0); /* Start and end at the original position */
+@media (min-width: 375px) {
+  .blob1 {
+    left: -75%;
   }
-  50% {
-    transform: translateY(-25px); /* Move 50px upwards */
+  .blob2 {
+    right: -60%;
+  }
+}
+@media (min-width: 425px) {
+  :root {
+    --mainHeading:2.5rem;
+  }
+  .blob1 {
+    left: -63%;
+  }
+  .blob2 {
+    right: -50%;
+  }
+}
+@media (min-width: 480px) {
+  .blob1 {
+    top: 3%;
+    left: -55%;
+  }
+  .blob2 {
+    right: -50%;
+  }
+}
+@media (min-width: 550px) {
+  .blob1 {
+    top: 3%;
+    left: -35%;
+  }
+  .blob2 {
+    right: -35%;
+  }
+  .mainContent {
+    flex: 2;
+  }
+  .myStack {
+    flex: 1;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --mainHeading: 3.125rem;
+  }
+  .blob1 {
+    top: 7%;
+    left: -25%;
+  }
+  .blob2 {
+    right: -22%;
+    bottom: 8%;
+  }
+  .mainContent {
+    height: 100dvh;
+  }
+}
+@media (min-width: 1024px) {
+  .blob1 {
+    top: 10%;
+    left: -15%;
+  }
+  .blob2 {
+    right: -15%;
+  }
+  nav {
+    padding: 0.5rem 1rem;
+  }
+  .lowerNav {
+    padding: 0.5rem 0;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --mainHeading: 4rem;
+    --textFontSize: 0.9375rem;
+    --subHeading: 1.25rem;
+    --tagFontSize:0.8125rem;
+  }
+}
+@media (min-width: 1400px) {
+  .blob1 {
+    top: 10%;
+    left: -12%;
+  }
+  .blob2 {
+    right: -12%;
+    bottom: 15%;
+  }
+}
+@media (min-width: 1800px) {
+  .blob1 {
+    top: 10%;
+    left: -9%;
+  }
+  .blob2 {
+    right: -9%;
   }
 }

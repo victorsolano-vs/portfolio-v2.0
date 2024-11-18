@@ -1,0 +1,118 @@
+@media (min-width: 375px){
+    // main section
+    .blob1{
+        left: -75%;
+    }
+    .blob2{
+        right: -60%;
+    }
+}
+@media (min-width: 425px){
+    :root{
+        --mainHeading:2.5rem;
+    }
+    // main section
+    .blob1{
+        left: -63%;
+    }
+    .blob2{
+        right: -50%;
+    }
+}
+
+@media (min-width: 480px){
+    // main section
+    .blob1{
+        top: 3%;
+        left: -55%;
+    }
+    .blob2{
+        right: -50%;
+    }
+}
+@media (min-width: 550px){
+        // main section
+        .blob1{
+            top: 3%;
+            left: -35%;
+        }
+        .blob2{
+            right: -35%;
+        }
+
+        .mainContent{
+            flex: 2;
+        }
+
+        .myStack{
+            flex: 1;
+        }
+}
+@media (min-width: 640px){
+
+}
+@media (min-width: 768px){
+    :root{
+        --mainHeading: 3.125rem;
+    }
+    // main content
+    .blob1{
+        top: 7%;
+        left: -25%;
+    }
+    .blob2{
+        right: -22%;
+        bottom: 8%;
+    }
+    .mainContent{
+        height: 100dvh;
+    }
+}
+@media (min-width: 1024px){
+    // main content
+    .blob1{
+        top: 10%;
+        left: -15%;
+    }
+    .blob2{
+        right: -15%;
+    }
+
+    nav{
+        padding: 0.5rem 1rem;
+    }
+
+    .lowerNav{
+        padding: 0.5rem 0;
+    }
+}
+@media (min-width: 1200px){
+    :root{
+        --mainHeading: 4rem;
+        --textFontSize: 0.9375rem;
+        --subHeading: 1.25rem;
+        --tagFontSize:0.8125rem;
+    }
+
+}
+@media (min-width: 1400px){
+    // main content
+    .blob1{
+        top: 10%;
+        left: -12%;
+    }
+    .blob2{
+        right: -12%;
+        bottom: 15%;
+    }
+}
+@media (min-width: 1800px){
+    // main content
+    .blob1{
+        top: 10%;
+        left: -9%;
+    }
+    .blob2{
+        right: -9%;
+    }
+}

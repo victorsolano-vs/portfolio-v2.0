@@ -6,8 +6,8 @@
     --borderColor: rgb(205, 205, 205);
     --textColor: rgb(33, 33, 33);
     --accentColor: rgb(246, 246, 247);
-    // --accentColorRGB: 246, 246,247;
     --hoverLinkColor: rgb(100, 99, 99);
+    
 
 
 
@@ -17,15 +17,15 @@
     --tagFontSize: 0.75rem;
     --textFontSize: 0.875rem;
     --subHeading: 1.125rem;
+    --locationFontSize: 0.75rem;
 }
 
 [data-theme = 'dark']{
     --backgroundColor: rgb(7, 7, 7);
-    --borderColor: rgb(205, 205, 205);
+    --borderColor:#787878;
     --textColor: rgb(255, 255, 255);
     --accentColor: #2121214d;
-    // --accentColorRGB: 33,33,33;
-    --hoverLinkColor: rgb(100, 99, 99);
+    --hoverLinkColor: rgb(209, 209, 209);
 }
 
 // transition duration for theme change

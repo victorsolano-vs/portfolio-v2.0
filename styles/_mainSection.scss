@@ -190,7 +190,7 @@ main{
             margin-bottom: -0.2rem;
         }
         &:nth-child(2){
-            font-size: 12px;
+            font-size: var(--locationFontSize);
         }
     }
 }

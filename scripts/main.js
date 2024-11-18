@@ -40,11 +40,9 @@ mobileNavLinks.forEach((link) => {
 // ============ navbar background on scroll =============
 window.onscroll = () => {
     if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
-        document.querySelector('.siteHeader').style.background = 'white'
-        document.querySelector('.siteHeader').style.borderBottom = '1px solid lightgrey'
+        document.querySelector('.siteHeader').classList.add('navScrolled')
     } else {
-        document.querySelector('.siteHeader').style.background = 'none'
-        document.querySelector('.siteHeader').style.borderBottom = 'none'
+        document.querySelector('.siteHeader').classList.remove('navScrolled')
     }
 }
 

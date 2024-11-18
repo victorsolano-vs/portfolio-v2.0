@@ -1,4 +1,4 @@
-header{
+.siteHeader{
     padding: 0.4rem 1rem;
     position: fixed;
     z-index: 999;
@@ -8,6 +8,11 @@ header{
     transition: 
         all 0.3s ease
     ;
+}
+
+.navScrolled{
+    background: var(--backgroundColor);
+    border-bottom: 1px solid var(--borderColor);
 }
 
 nav{

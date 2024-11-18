@@ -396,7 +396,7 @@ main {
 
 .expTasks {
   font-size: var(--textFontSize);
-  list-style: none;
+  list-style-position: inside;
 }
 
 @media (min-width: 375px) {

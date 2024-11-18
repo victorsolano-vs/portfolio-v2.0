@@ -110,12 +110,12 @@ main{
 
             font-size: var(--tagFontSize);
 
-            svg{
+            img{
                 $svgSize: 24px;
                 height: $svgSize;
                 width: $svgSize;
             }
-            background: var(--accentColor);
+            background: rgba(var(--accentColorRGB), 0.3);
             padding: 0.4rem 0.6rem;
             border-radius: 0.5rem;
         }

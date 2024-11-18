@@ -85,8 +85,15 @@ nav{
     align-items: center;
     justify-content: center;
 
-    &:hover{
+    border-radius: 5px;
+    transition: background 0.3s ease;
 
+    svg{
+        fill: var(--textColor);
+    }
+
+    &:hover{
+        background: var(--accentColor);
     }
 }
 

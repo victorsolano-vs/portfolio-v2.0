@@ -490,6 +490,51 @@ main {
   pointer-events: all;
 }
 
+.projectsContainer {
+  position: relative;
+  width: 100%;
+  max-width: 25rem;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.noProjectsMsg {
+  position: absolute;
+  top: 2vh;
+  font-size: var(--tagFontSize);
+  color: var(--textColor);
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.projectCard {
+  background: lightcoral;
+  color: var(--textColor);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.projectCard .cardTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.projectCard ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.projectLinks a {
+  color: var(--textColor);
+  border: 1px solid var(--textColor);
+  padding: 0.4rem 0.6rem;
+}
+
 @media (min-width: 375px) {
   .blob1 {
     left: -75%;
@@ -531,6 +576,36 @@ main {
   }
   .myStack {
     flex: 1;
+  }
+  .projectsContainer {
+    max-width: 37.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 640px) {
+  .dropdownListBtn {
+    display: none;
+  }
+  .categoryList {
+    max-width: 31.25rem;
+    position: static;
+    opacity: 1;
+    pointer-events: all;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .categoryList button {
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  .categoryList button:hover {
+    background: var(--buttonColor);
+    color: var(--buttonTextColor);
+  }
+  .categoryList .activeCategory {
+    background: var(--buttonColor);
+    color: var(--buttonTextColor);
   }
 }
 @media (min-width: 768px) {
@@ -585,6 +660,10 @@ main {
   }
   .contactBtn:hover {
     transform: scale(0.95);
+  }
+  .projectsContainer {
+    max-width: 53.125rem;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1024px) {

@@ -186,7 +186,7 @@ function renderProjects(toRenderProj){
                     </div>
                        <ul>
                         ${project.projectTechStack.map((p) => `
-                        <li>${p}</li>
+                        <li>${p}</li> &#8226;
                         `).join('')}
                        </ul>
 

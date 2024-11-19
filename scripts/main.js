@@ -180,18 +180,23 @@ function renderProjects(toRenderProj){
 
             portfolioHTML += `
                 <div class="projectCard">
-                       
-                    <h3 class="projectTitle">
-                        ${project.projectName}
-                    </h3>
-    
-                    <h3 class="projectType">
-                        ${project.projectType}
-                    </h3>
+                    <div class = 'cardTitle'>
+                        <h6>${project.projectName}</h6>
+                        <p>${project.projectType}</p>
+                    </div>
+                       <ul>
+                        ${project.projectTechStack.map((p) => `
+                        <li>${p}</li>
+                        `).join('')}
+                       </ul>
+
+                       <div class = 'projectDescription'>
+                            ${project.projectDescription}
+                        </div>
     
                     <div class="projectLinks">
                         <a href="${project.projectLiveLink}">${project.projectType === 'UX/UI Design' ? 'View Design' : 'Live Demo' }</a>
-                        <button class = 'projectLearnMore'>Learn More</button>
+                        <a href = '#' class = 'projectLearnMore'>Learn More</a>
                     </div>
                 </div>
             `

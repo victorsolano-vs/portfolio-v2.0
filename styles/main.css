@@ -446,6 +446,7 @@ main {
 
 .projectsCategories {
   position: relative;
+  margin: 2rem 0;
 }
 
 .categoryList {

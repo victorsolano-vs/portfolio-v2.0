@@ -70,15 +70,18 @@
 
         button{
             transition: background 0.3s ease, color 0.3s ease;
+            font-size: var(--tagFontSize);
+            background: var(--accentColor);
+            color: var(--textColor);
             &:hover{
-                background: var(--buttonColor);
-                color: var(--buttonTextColor);
+                background: var(--accentColor);
+                color: var(--textColor);
             }
         }
 
         .activeCategory{
-            background: var(--buttonColor);
-            color: var(--buttonTextColor);
+            background: var(--activeBtnColor);
+            color: var(--activeBtnTextColor);
         }
     }
 }

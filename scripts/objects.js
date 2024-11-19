@@ -65,7 +65,7 @@ export const experience = [
 export const projects = [
     {
         projectName: 'E-commerce Redesign',
-        projectType: 'UX/UI Design',
+        projectType: 'UI/UX Design',
         projectDescription: 'A modern redesign of an e-commerce website focusing on user experience and visual appeal.',
         projectTechStack: [
             'Figma',
@@ -116,7 +116,7 @@ export const projects = [
     },
     {
         projectName: 'Social Media Dashboard',
-        projectType: 'UX/UI Design',
+        projectType: 'UI/UX Design',
         projectDescription: 'A dashboard for managing and tracking social media analytics, focused on clean UI and accessibility.',
         projectTechStack: [
             'Figma',
@@ -167,7 +167,7 @@ export const projects = [
     },
     {
         projectName: 'Virtual Art Gallery',
-        projectType: 'UX/UI Design',
+        projectType: 'UI/UX Design',
         projectDescription: 'A virtual gallery experience showcasing digital art pieces with immersive visuals.',
         projectTechStack: [
             'Adobe XD',

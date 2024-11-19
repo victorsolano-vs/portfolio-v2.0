@@ -180,14 +180,17 @@ function renderProjects(toRenderProj){
 
             portfolioHTML += `
                 <div class="projectCard">
+                <div class="projectIMGContainer">
+                        <img src="${project.projectImages.thumbnailView}" alt="" loading = 'lazy'>
+                    </div>
                     <div class = 'cardTitle'>
                         <h6>${project.projectName}</h6>
                         <p>${project.projectType}</p>
                     </div>
                        <ul>
                         ${project.projectTechStack.map((p) => `
-                        <li>${p}</li> &#8226;
-                        `).join('')}
+                        <li>${p}</li> 
+                        `).join('&#8226;')}
                        </ul>
 
                        <div class = 'projectDescription'>
@@ -205,10 +208,10 @@ function renderProjects(toRenderProj){
     
     projectsContainer.innerHTML = portfolioHTML
 
-    // // add animation
-    // document.querySelectorAll('.projectCard').forEach((card, index) => {
-    //     setTimeout(() => {
-    //         card.classList.add('projectCardShow')
-    //     }, index * 100)
-    // })
+    // add animation
+    document.querySelectorAll('.projectCard').forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('projectCardShow')
+        }, index * 100)
+    })
 }

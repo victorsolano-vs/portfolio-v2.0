@@ -15,6 +15,7 @@
         background: var(--accentColor);
         color: var(--textColor);
         transition: background 0.3s ease-in-out;
+        cursor: pointer;
     }
     .activeExpBtn{
         background: var(--activeBtnColor);
@@ -28,10 +29,14 @@
     color: var(--textColor);
     max-width: 600px;
     margin: 0 auto;
+    
 }
 
 .expBlock{
     margin-bottom: 1.5rem;
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 
 .expTag{

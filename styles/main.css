@@ -373,6 +373,7 @@ main {
   background: var(--accentColor);
   color: var(--textColor);
   transition: background 0.3s ease-in-out;
+  cursor: pointer;
 }
 .experienceCategories .activeExpBtn {
   background: var(--activeBtnColor);
@@ -387,6 +388,9 @@ main {
 
 .expBlock {
   margin-bottom: 1.5rem;
+}
+.expBlock:last-child {
+  margin-bottom: 0;
 }
 
 .expTag {

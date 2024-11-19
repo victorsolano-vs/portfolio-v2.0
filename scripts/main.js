@@ -1,4 +1,4 @@
-import { experience } from "./objects.js"
+import { experience, projects } from "./objects.js"
 
 // ============ light/dark theme toggle =============
 function initializeTheme() {
@@ -64,7 +64,7 @@ function filterExperience(category){
         //function to render all the experiences
 function renderExperiences(expToRender){
     let experienceContainer = document.querySelector('.experienceContainer')
-    console.log(expToRender)
+
     let experienceHTML = ''
 
     expToRender.forEach((exp) => {
@@ -150,6 +150,60 @@ categoryProjectItems.forEach((item) => {
         dropdownText.innerHTML = item.innerHTML
         categoryList.classList.remove('showCategoryList')
 
-        // filterItems(item.innerHTML)
+        filterProjects(item.innerHTML)
     })
 })
+
+renderProjects(projects)
+
+function filterProjects(category){
+    if(category === 'All'){
+        renderProjects(projects)
+    } else {
+        let filteredProjects = projects.filter((project, index) => {
+            return project.projectType === category 
+        })
+        renderProjects(filteredProjects)
+    }
+}
+
+function renderProjects(toRenderProj){
+    let projectsContainer = document.querySelector('.projectsContainer')
+    let portfolioHTML = ''
+
+    if(toRenderProj.length === 0){
+        portfolioHTML = `
+            <p class = 'noProjectsMsg'>No projects yet! Currently creating!</p>
+        `
+    } else {
+        toRenderProj.forEach((project) => {
+
+            portfolioHTML += `
+                <div class="projectCard">
+                       
+                    <h3 class="projectTitle">
+                        ${project.projectName}
+                    </h3>
+    
+                    <h3 class="projectType">
+                        ${project.projectType}
+                    </h3>
+    
+                    <div class="projectLinks">
+                        <a href="${project.projectLiveLink}">${project.projectType === 'UX/UI Design' ? 'View Design' : 'Live Demo' }</a>
+                        <button class = 'projectLearnMore'>Learn More</button>
+                    </div>
+                </div>
+            `
+        })
+    }
+    
+    projectsContainer.innerHTML = portfolioHTML
+
+    // // add animation
+    // document.querySelectorAll('.projectCard').forEach((card, index) => {
+    //     setTimeout(() => {
+    //         card.classList.add('projectCardShow')
+    //     }, index * 100)
+    // })
+}

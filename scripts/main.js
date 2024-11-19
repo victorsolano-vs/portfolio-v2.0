@@ -112,3 +112,44 @@ categoryItems.forEach((item) => {
     })
 })
 
+
+//  ============== projects section =============
+
+const dropdownBtn = document.querySelector('.dropdownListBtn')
+const dropdownText = document.querySelector('.dropdownBtnText')
+const dropdownSvg = document.querySelector('.dropdownListBtn svg')
+const categoryList = document.querySelector('.categoryList')
+
+dropdownBtn.addEventListener('click', () => {
+    dropdownSvg.classList.toggle('transformArrow')
+    categoryList.classList.toggle('showCategoryList')
+})
+
+    // when clicking outside the list, close the list
+document.addEventListener('click', (event) => {
+    if(!categoryList.contains(event.target) && !dropdownBtn.contains(event.target)){
+        dropdownSvg.classList.toggle('transformArrow')
+        categoryList.classList.remove('showCategoryList')
+    }
+})
+
+
+// make the selected text change the text on the main btn
+const categoryProjectItems = document.querySelectorAll('.categoryList button')
+
+const defaultProjectCategory = document.querySelector('[data-category="all"]');
+defaultProjectCategory.classList.add('activeCategory')
+
+categoryProjectItems.forEach((item) => {
+    item.addEventListener('click', () => {
+
+        categoryProjectItems.forEach((btn) => {btn.classList.remove('activeCategory')})
+        item.classList.add('activeCategory')
+        dropdownSvg.classList.toggle('transformArrow')
+        
+        dropdownText.innerHTML = item.innerHTML
+        categoryList.classList.remove('showCategoryList')
+
+        // filterItems(item.innerHTML)
+    })
+})

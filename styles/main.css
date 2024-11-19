@@ -411,9 +411,10 @@ main {
 }
 
 .dropdownListBtn {
-  background: var(--accentColor);
-  color: var(--textColor);
-  max-width: fit-content;
+  background: var(--activeBtnColor);
+  color: var(--activeBtnTextColor);
+  width: 100%;
+  max-width: 18.75rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -432,11 +433,56 @@ main {
   transition: transform 0.5 ease;
 }
 .dropdownListBtn svg path {
-  stroke: var(--textColor);
+  stroke: var(--activeBtnTextColor);
 }
 
 .transformArrow {
   transform: rotate(180deg);
+}
+
+.projectsCategories {
+  position: relative;
+}
+
+.categoryList {
+  position: absolute;
+  z-index: 100;
+  top: 2.8rem;
+  left: 0;
+  right: 0;
+  max-width: 18.75rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  list-style: none;
+  background: var(--activeBtnColor);
+  border-radius: 10px;
+  padding: 0.2rem;
+  transition: background 0.4s ease, opacity 0.1s ease-in;
+}
+.categoryList button {
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-radius: 3.125rem;
+  color: var(--activeBtnTextColor);
+  font-size: var(--textFontSize);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.categoryList button:hover {
+  background: var(--backgroundColor);
+  color: var(--textColor);
+}
+
+.showCategoryList {
+  opacity: 1;
+  pointer-events: all;
 }
 
 @media (min-width: 375px) {

@@ -92,10 +92,6 @@
             background 0.3s ease-in-out,
             color 0.3s ease-in-out
             ;
-        &:hover{
-            background: var(--backgroundColor);
-            color: var(--textColor);
-        }
     }
 }
 
@@ -150,11 +146,12 @@
         margin-top: 1rem;
 
         h6{
-            font-size: 12px;
+            font-size: var(--projectCardTitle);
             font-weight: 400;
         }
         p{
-            font-size: 12px;
+            font-size: var(--projectCardType);
+            color: var(--subTextColor);
         }
 
     }
@@ -162,32 +159,40 @@
     ul{
         display: flex;
         align-items: center;
+        gap: 0.2rem;
         list-style: none;
-        font-size: 12px;
+        font-size: var( --projectCardStack);
         margin-top: 0.5rem;
     }
 
     .projectDescription{
-        font-size: 12px;
+        font-size: var(--projectCardDesc);
         margin: 1rem 0;
+        color: var(--subTextColor);
     }
-
-    .projectLinks{
-        a{
-            font-size: 12px;
-            border-radius: 8px;
-        }
-    }
-
-
 }
 
 .projectLinks{
     a{
+        border-radius: 8px;
         color: var(--textColor);
+
         border: 1px solid var(--textColor);
         padding: 0.4rem 0.6rem;
-        
+
+        font-size: var(--projectCardLinks);
+        display: inline-block;
+
+        transition: transform 0.3s ease;
+        &:hover{
+            transform: scale(0.95);
+        }
+
+        &:nth-child(1){
+            background: var(--activeBtnColor);
+            color: var(--activeBtnTextColor);
+            
+        }
     }        
 }
 

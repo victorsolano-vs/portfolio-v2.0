@@ -14,14 +14,19 @@
   --textFontSize: 0.875rem;
   --subHeading: 1.125rem;
   --locationFontSize: 0.75rem;
+  --projectCardTitle: 0.875rem;
+  --projectCardType: 0.75rem;
+  --projectCardStack: 0.75rem;
+  --projectCardDesc: 0.75rem;
+  --projectCardLinks: 0.75rem;
 }
 
 [data-theme=dark] {
-  --backgroundColor: rgb(7, 7, 7);
+  --backgroundColor: rgb(17, 17, 17);
   --borderColor:#787878;
   --textColor: rgb(255, 255, 255);
   --subTextColor: rgb(230, 229, 229);
-  --accentColor: #2121214d;
+  --accentColor: #302f2f65;
   --hoverLinkColor: rgb(209, 209, 209);
   --activeBtnColor: rgb(255, 255, 255);
   --activeBtnTextColor: rgb(7,7,7);
@@ -492,10 +497,6 @@ main {
   font-size: var(--tagFontSize);
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-.categoryList button:hover {
-  background: var(--backgroundColor);
-  color: var(--textColor);
-}
 
 .showCategoryList {
   opacity: 1;
@@ -538,32 +539,42 @@ main {
   margin-top: 1rem;
 }
 .projectCard .cardTitle h6 {
-  font-size: 12px;
+  font-size: var(--projectCardTitle);
   font-weight: 400;
 }
 .projectCard .cardTitle p {
-  font-size: 12px;
+  font-size: var(--projectCardType);
+  color: var(--subTextColor);
 }
 .projectCard ul {
   display: flex;
   align-items: center;
+  gap: 0.2rem;
   list-style: none;
-  font-size: 12px;
+  font-size: var(--projectCardStack);
   margin-top: 0.5rem;
 }
 .projectCard .projectDescription {
-  font-size: 12px;
+  font-size: var(--projectCardDesc);
   margin: 1rem 0;
-}
-.projectCard .projectLinks a {
-  font-size: 12px;
-  border-radius: 8px;
+  color: var(--subTextColor);
 }
 
 .projectLinks a {
+  border-radius: 8px;
   color: var(--textColor);
   border: 1px solid var(--textColor);
   padding: 0.4rem 0.6rem;
+  font-size: var(--projectCardLinks);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.projectLinks a:hover {
+  transform: scale(0.95);
+}
+.projectLinks a:nth-child(1) {
+  background: var(--activeBtnColor);
+  color: var(--activeBtnTextColor);
 }
 
 .projectCardShow {
@@ -635,10 +646,6 @@ main {
   .categoryList button {
     transition: background 0.3s ease, color 0.3s ease;
     font-size: var(--tagFontSize);
-    background: var(--accentColor);
-    color: var(--textColor);
-  }
-  .categoryList button:hover {
     background: var(--accentColor);
     color: var(--textColor);
   }

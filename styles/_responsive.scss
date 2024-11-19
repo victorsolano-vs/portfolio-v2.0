@@ -73,10 +73,7 @@
             font-size: var(--tagFontSize);
             background: var(--accentColor);
             color: var(--textColor);
-            &:hover{
-                background: var(--accentColor);
-                color: var(--textColor);
-            }
+            
         }
 
         .activeCategory{

@@ -97,8 +97,17 @@ function renderExperiences(expToRender){
         //code to add filter ability to buttons
 const categoryItems = document.querySelectorAll('.experienceCategories button')
 
+const defaultCategory = document.querySelector('.workBtn')
+defaultCategory.classList.add('activeExpBtn')
+
 categoryItems.forEach((item) => {
     item.addEventListener('click', () => {
+
+        categoryItems.forEach((btn) => {
+            btn.classList.remove('activeExpBtn')
+        })
+        item.classList.add('activeExpBtn')
+
         filterExperience(item.innerHTML)
     })
 })

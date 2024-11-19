@@ -4,18 +4,25 @@
     justify-content: center;
     gap: 0.5rem;
 
-    margin: 2rem 0 1rem;
+    margin: 2rem 0;
     
     button{
-        padding: 0.3rem 0.7rem;
+        padding: 0.5rem 1rem;
         border-radius: 50px;
         outline: none;
         border: none;
         font-size: var(--tagFontSize);
         background: var(--accentColor);
         color: var(--textColor);
+        transition: background 0.3s ease-in-out;
+    }
+    .activeExpBtn{
+        background: var(--activeBtnColor);
+        color: var(--activeBtnTextColor);
     }
 }
+
+
 
 .experienceContainer{
     color: var(--textColor);

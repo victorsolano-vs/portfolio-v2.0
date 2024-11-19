@@ -28,6 +28,8 @@
     --projectCardStack: 0.75rem; //12
     --projectCardDesc: 0.75rem; //12
     --projectCardLinks: 0.75rem;//12
+
+    --fontLabelSize: 1rem;//16
 }
 
 [data-theme = 'dark']{
@@ -73,16 +75,6 @@ body{
     max-width: 600px;
     text-align: left;
     margin: 0 auto;
-}
-
-
-
-@mixin horizontalList{
-
-}
-
-@mixin buttonStyles{
-
 }
 
 @mixin frostedBackground{

@@ -49,6 +49,7 @@ body {
   background: var(--backgroundColor);
   overflow-x: hidden;
   transition: background 0.4s ease;
+  padding-bottom: 4rem;
 }
 
 .sectionPadding {
@@ -173,10 +174,6 @@ nav div:nth-child(3) {
 }
 .burgerMenu:hover {
   transform: scale(0.9);
-}
-
-html {
-  margin-bottom: 1000px;
 }
 
 main {

@@ -33,6 +33,17 @@
   --activeBtnTextColor: rgb(7,7,7);
 }
 
+.change {
+  --backgroundColor: rgb(17, 17, 17);
+  --borderColor:#787878;
+  --textColor: rgb(255, 255, 255);
+  --subTextColor: rgb(230, 229, 229);
+  --accentColor: #302f2f65;
+  --hoverLinkColor: rgb(209, 209, 209);
+  --activeBtnColor: rgb(255, 255, 255);
+  --activeBtnTextColor: rgb(7,7,7);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +59,7 @@ a {
 body {
   background: var(--backgroundColor);
   overflow-x: hidden;
-  transition: background 0.4s ease;
+  transition: background 0.3s ease;
   padding-bottom: 4rem;
 }
 
@@ -83,6 +94,10 @@ body {
   transition: all 0.3s ease;
 }
 
+.navbarOpen {
+  background: var(--backgroundColor);
+}
+
 .navScrolled {
   background: var(--backgroundColor);
   border-bottom: 1px solid var(--borderColor);
@@ -110,7 +125,7 @@ nav div:nth-child(3) {
   font-weight: 500;
   font-size: var(--logoSize);
   color: var(--textColor);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 .logo:hover {
   transform: scale(0.9);
@@ -130,7 +145,7 @@ nav div:nth-child(3) {
   z-index: 998;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease, bacground 0.3s ease;
   background: var(--backgroundColor);
   border-bottom: 1px var(--borderColor) solid;
 }
@@ -139,7 +154,7 @@ nav div:nth-child(3) {
   display: block;
   padding: 1rem;
   color: var(--textColor);
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 .navLinks a:hover {
   background: var(--accentColor);
@@ -170,6 +185,7 @@ nav div:nth-child(3) {
   transition: transform 0.3s ease;
 }
 .burgerMenu svg {
+  transition: fill 0.3s ease;
   fill: var(--textColor);
 }
 .burgerMenu:hover {
@@ -200,6 +216,7 @@ main {
   font-weight: 500;
   font-size: var(--mainHeading);
   color: var(--textColor);
+  transition: color 0.3s ease;
 }
 .mainContent .roleTags {
   margin: 0 0 0.5rem 0;
@@ -214,6 +231,7 @@ main {
   display: inline-flex;
   padding: 0.3rem 0.6rem;
   border-radius: 50px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 .mainContent .aboutMeText {
   color: var(--textColor);
@@ -221,6 +239,7 @@ main {
   max-width: 540px;
   margin: 0 auto;
   margin-bottom: 1rem;
+  transition: color 0.3s ease;
 }
 .mainContent .socialLinks {
   display: flex;
@@ -237,18 +256,20 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.3s ease;
 }
 .mainContent .socialLinks a svg {
   height: 18px;
   width: 18px;
   fill: var(--textColor);
+  transition: fill 0.3s ease;
 }
 .mainContent .socialLinks a:hover::after {
   opacity: 1;
   visibility: visible;
 }
 .mainContent .socialLinks a::after {
-  content: attr(data-tooltip); /* Use the data-tooltip attribute's value */
+  content: attr(data-tooltip);
   position: absolute;
   top: 120%;
   left: 50%;
@@ -261,7 +282,7 @@ main {
   white-space: nowrap;
   opacity: 1;
   visibility: hidden;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out, background 0.3s ease, color 0.3s ease;
 }
 
 .myStack {
@@ -272,6 +293,7 @@ main {
   font-weight: 500;
   font-size: var(--subHeading);
   text-align: center;
+  transition: color 0.3s ease;
 }
 
 .stacksContainer {
@@ -293,6 +315,7 @@ main {
   gap: 0.5rem;
   font-size: var(--tagFontSize);
   color: var(--textColor);
+  transition: color 0.3s ease, background 0.3s ease;
   background: var(--accentColor);
   padding: 0.4rem 0.6rem;
   border-radius: 0.5rem;
@@ -319,6 +342,7 @@ main {
 }
 .themeToggle svg {
   fill: var(--textColor);
+  transition: fill 0.3s ease;
   height: 18px;
   width: 18px;
 }
@@ -328,6 +352,7 @@ main {
 
 .location {
   color: var(--textColor);
+  transition: color 0.3s ease;
 }
 .location p:nth-child(1) {
   font-size: 10px;
@@ -381,9 +406,11 @@ main {
 .experienceCategories .activeExpBtn {
   background: var(--activeBtnColor);
   color: var(--activeBtnTextColor);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .experienceContainer {
+  transition: color 0.3s ease;
   color: var(--textColor);
   max-width: 600px;
   margin: 0 auto;
@@ -402,6 +429,7 @@ main {
   color: var(--textColor);
   padding: 0.3rem 0.8rem;
   border-radius: 50px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .expTitle {
@@ -437,6 +465,7 @@ main {
 .dropdownListBtn {
   background: var(--activeBtnColor);
   color: var(--activeBtnTextColor);
+  transition: background 0.3s ease, color 0.3s ease;
   width: 100%;
   max-width: 15rem;
   margin-left: auto;
@@ -457,6 +486,7 @@ main {
   transition: transform 0.5 ease;
 }
 .dropdownListBtn svg path {
+  transition: stroke 0.3s ease;
   stroke: var(--activeBtnTextColor);
 }
 
@@ -481,7 +511,7 @@ main {
   background: var(--activeBtnColor);
   border-radius: 10px;
   padding: 0.2rem;
-  transition: background 0.4s ease, opacity 0.1s ease-in;
+  transition: background 0.3s ease, opacity 0.1s ease-in;
 }
 .categoryList button {
   cursor: pointer;
@@ -493,7 +523,7 @@ main {
   border-radius: 3.125rem;
   color: var(--activeBtnTextColor);
   font-size: var(--tagFontSize);
-  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .showCategoryList {
@@ -509,6 +539,7 @@ main {
   display: block;
   width: 100%;
   text-align: center;
+  transition: color 0.3s ease;
 }
 
 .projectCard {
@@ -518,10 +549,11 @@ main {
   padding: 0.5rem;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, color 0.3s ease, background 0.3s ease;
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .projectCard .projectIMGContainer img {
   border-radius: 10px;

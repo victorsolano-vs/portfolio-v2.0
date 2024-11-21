@@ -4,8 +4,8 @@ export const experience = [
         type: 'Certificate',
         title: 'UX Design - Google (Coursera)',
         description: [
-            'this is a pointer',
-            'this is a pointer description 2'
+            'Learned about inclusive modern design',
+            'Experienced the ability to research and create case studies'
         ]
     }, 
     {
@@ -13,8 +13,9 @@ export const experience = [
         type: 'Work',
         title: 'Information Technology Intern - Tucker Energy Services Ltd.',
         description: [
-            'this is a pointer',
-            'this is a pointer description 2'
+            'Conducted research and testing of various ATS (Applicant Tracking System) platforms to implement into the HR department.',
+            'Assisted in upgrading the intranet using Microsoft SharePoint, PowerApps, and Power Automate.',
+            'Performed cleaning of data on the company database to ensure accuracy and reliability.'
         ]
     },
     {
@@ -75,9 +76,6 @@ export const projects = [
         projectLiveLink: 'https://www.ecommerce-redesign.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: './assets/projects/dribblepic.jpg',
-            desktopView: './assets/projects/dribblepic.jpg',
-            pallete: './assets/projects/dribblepic.jpg'
         }
     },
     {
@@ -92,26 +90,20 @@ export const projects = [
         projectLiveLink: 'https://www.taskmanagerapp.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: './assets/projects/dribblepic.jpg',
-            desktopView: './assets/projects/dribblepic.jpg',
-            pallete: './assets/projects/dribblepic.jpg'
         }
     },
     {
-        projectName: 'Portfolio Website',
+        projectName: 'Primitive Detailing',
         projectType: 'Web Development',
-        projectDescription: 'A personal portfolio showcasing projects and skills, built with responsive design principles.',
+        projectDescription: 'A landing page business website showcasing the details and services for a vehicle detailing business.',
         projectTechStack: [
             'HTML',
             'CSS',
             'JavaScript'
         ],
-        projectLiveLink: 'https://www.portfolio-website.com',
+        projectLiveLink: 'https://www.primitivedetailing.netlify.app',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: './assets/projects/dribblepic.jpg',
-            desktopView: './assets/projects/dribblepic.jpg',
-            pallete: './assets/projects/dribblepic.jpg'
         }
     },
     {
@@ -126,9 +118,6 @@ export const projects = [
         projectLiveLink: 'https://www.socialmedia-dashboard.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: './assets/projects/dribblepic.jpg',
-            desktopView: './assets/projects/dribblepic.jpg',
-            pallete: './assets/projects/dribblepic.jpg'
         }
     },
     {
@@ -143,9 +132,6 @@ export const projects = [
         projectLiveLink: 'https://www.weatherapp.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: './assets/projects/dribblepic.jpg',
-            desktopView: './assets/projects/dribblepic.jpg',
-            pallete: './assets/projects/dribblepic.jpg'
         }
     },
     {
@@ -160,9 +146,6 @@ export const projects = [
         projectLiveLink: 'https://www.recipeblog.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: './assets/projects/dribblepic.jpg',
-            desktopView: './assets/projects/dribblepic.jpg',
-            pallete: './assets/projects/dribblepic.jpg'
         }
     },
     {
@@ -177,9 +160,20 @@ export const projects = [
         projectLiveLink: 'https://www.virtualartgallery.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
-            mobileView: './assets/projects/dribblepic.jpg',
-            desktopView: './assets/projects/dribblepic.jpg',
-            pallete: './assets/projects/dribblepic.jpg'
+        }
+    },
+    {
+        projectName: 'Social Media Dashboard',
+        projectType: 'UI/UX Design',
+        projectDescription: 'A dashboard for managing and tracking social media analytics, focused on clean UI and accessibility.',
+        projectTechStack: [
+            'Figma',
+            'Adobe XD',
+            'InVision'
+        ],
+        projectLiveLink: 'https://www.socialmedia-dashboard.com',
+        projectImages: {
+            thumbnailView: './assets/projects/dribblepic.jpg',
         }
     }
 ]

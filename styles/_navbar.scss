@@ -5,9 +5,11 @@
     width: 100%;
     top: 0;
     left: 0;
-    transition: 
-        all 0.3s ease
-    ;
+    transition: all $transitionDuration ease;
+}
+
+.navbarOpen{
+    background: var(--backgroundColor);
 }
 
 .navScrolled{
@@ -40,8 +42,8 @@ nav{
     font-size: var(--logoSize);
     color: var(--textColor);
     transition: 
-        transform 0.3s ease
-    
+        transform 0.3s ease,
+        color $transitionDuration ease
     ;
     &:hover{
         transform: scale(0.9);
@@ -64,7 +66,9 @@ nav{
     pointer-events: none;
     
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease, 
+        bacground $transitionDuration ease
+    ;
 
     background: var(--backgroundColor);
     border-bottom: 1px var(--borderColor) solid;
@@ -75,7 +79,10 @@ nav{
         padding: 1rem;
         color: var(--textColor);
 
-        transition: background 0.3s ease;
+        transition: 
+            background 0.3s ease,
+            color $transitionDuration ease
+        ;
         &:hover{
             background: var(--accentColor);
         }
@@ -108,6 +115,7 @@ nav{
     transition: transform 0.3s ease;
 
     svg{
+        transition: fill $transitionDuration ease;
         fill: var(--textColor);
     }
 

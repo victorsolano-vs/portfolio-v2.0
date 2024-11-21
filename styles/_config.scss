@@ -44,7 +44,20 @@
 }
 
 // transition duration for theme change
-$transitionDuration: 0.4s;
+$transitionDuration: 0.3s;
+
+.change{
+    
+        --backgroundColor: rgb(17, 17, 17);
+        --borderColor:#787878;
+        --textColor: rgb(255, 255, 255);
+        --subTextColor: rgb(230, 229, 229);
+        --accentColor: #302f2f65;
+        --hoverLinkColor: rgb(209, 209, 209);
+        --activeBtnColor: rgb(255, 255, 255);
+        --activeBtnTextColor: rgb(7,7,7);
+    
+}
 
 *{
     margin: 0;

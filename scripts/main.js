@@ -1,32 +1,27 @@
 import { experience, projects } from "./objects.js"
 
-// ============ light/dark theme toggle =============
-function initializeTheme() {
+
+
+function initializeTheme(){
     const themeToggleBtn = document.querySelector('.themeToggle')
     const body = document.body
 
-            // initialize
-    const savedTheme = localStorage.getItem('theme') || 'light'
-    body.setAttribute('data-theme', savedTheme)
+    themeToggleBtn.addEventListener('click', () => {
 
-            // toggle theme and save to local storage
-            themeToggleBtn.addEventListener('click', () => {
-                const newTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'
-                body.setAttribute('data-theme', newTheme)
-                localStorage.setItem('theme', newTheme)
-            })
+        body.classList.toggle('change')
+        
+    })
 }
-
 initializeTheme()
-
-
 
 // ============ burger menu animations ============
 const burgerMenu = document.querySelector('.burgerMenu')
 const mobileNav = document.querySelector('.navLinks')
 const mobileNavLinks = document.querySelectorAll('.navLinks li')
+const navbar = document.querySelector('.siteHeader')
 
 burgerMenu.addEventListener('click', ()=>{
+    navbar.classList.toggle('navbarOpen')
     mobileNav.classList.toggle('openMobileNav')
 })
 

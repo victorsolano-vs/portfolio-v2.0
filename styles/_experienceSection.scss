@@ -20,12 +20,15 @@
     .activeExpBtn{
         background: var(--activeBtnColor);
         color: var(--activeBtnTextColor);
+
+        transition: background $transitionDuration ease, color $transitionDuration ease
     }
 }
 
 
 
 .experienceContainer{
+    transition: color $transitionDuration ease;
     color: var(--textColor);
     max-width: 600px;
     margin: 0 auto;
@@ -45,6 +48,8 @@
     color: var(--textColor);
     padding: 0.3rem 0.8rem;
     border-radius: 50px;
+
+    transition: background $transitionDuration ease, color $transitionDuration ease;
 }
 
 .expTitle{

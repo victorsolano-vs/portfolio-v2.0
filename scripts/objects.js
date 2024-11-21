@@ -101,7 +101,7 @@ export const projects = [
             'CSS',
             'JavaScript'
         ],
-        projectLiveLink: 'https://www.primitivedetailing.netlify.app',
+        projectLiveLink: 'https://primitivedetailing.netlify.app/',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
         }

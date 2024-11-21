@@ -86,6 +86,13 @@ function renderExperiences(expToRender){
     })
 
     experienceContainer.innerHTML = experienceHTML
+
+
+    document.querySelectorAll('.expBlock').forEach((expBlock, index) => {
+        setTimeout(() => {
+            expBlock.classList.add('experienceShow')
+        }, index * 100)
+    })
 }
 
 
@@ -193,9 +200,9 @@ function renderProjects(toRenderProj){
                         </div>
     
                     <div class="projectLinks">
-                        <a href="${project.projectLiveLink}">${project.projectType === 'UI/UX Design' ? 'View Design' : 'Live Demo' }</a>
+                        <a target = '_blank' href="${project.projectLiveLink}">${project.projectType === 'UI/UX Design' ? 'View Design' : 'Live Demo' }</a>
 
-                        <a href ="">${project.projectType === 'UI/UX Design' ? 'Case Study' : 'Source Code'}</a>
+                        <a target = '_blank' href ="">${project.projectType === 'UI/UX Design' ? 'Case Study' : 'Source Code'}</a>
                     </div>
                 </div>
             `

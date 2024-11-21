@@ -418,6 +418,9 @@ main {
 
 .expBlock {
   margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .expBlock:last-child {
   margin-bottom: 0;
@@ -443,6 +446,11 @@ main {
 .expTasks {
   font-size: var(--textFontSize);
   list-style-position: inside;
+}
+
+.experienceShow {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .projectsContainer {

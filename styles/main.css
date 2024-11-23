@@ -309,7 +309,6 @@ main {
   background: none;
   border: none;
   outline: none;
-  transition: transform 0.3s ease;
   cursor: pointer;
 }
 .themeToggle svg {
@@ -317,9 +316,6 @@ main {
   transition: fill 0.3s ease;
   height: 18px;
   width: 18px;
-}
-.themeToggle:hover {
-  transform: scale(0.9);
 }
 
 .location {
@@ -417,7 +413,9 @@ main {
 
 .expTasks {
   font-size: var(--textFontSize);
+  color: var(--subTextColor);
   list-style-position: inside;
+  transition: color 0.3s ease;
 }
 
 .experienceShow {
@@ -577,7 +575,7 @@ main {
   padding: 0.4rem 0.6rem;
   font-size: var(--projectCardLinks);
   display: inline-block;
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
 }
 .projectLinks a:hover {
   transform: scale(0.95);
@@ -633,7 +631,7 @@ main {
   cursor: pointer;
   margin-top: 0.5rem;
   font-size: var(--tagFontSize);
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
   background: var(--activeBtnColor);
   color: var(--activeBtnTextColor);
 }

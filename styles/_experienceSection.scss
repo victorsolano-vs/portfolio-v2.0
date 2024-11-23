@@ -68,7 +68,9 @@
 
 .expTasks{
     font-size: var(--textFontSize);
+    color: var(--subTextColor);
     list-style-position: inside;
+    transition: color   $transitionDuration ease;
 }
 
 .experienceShow{

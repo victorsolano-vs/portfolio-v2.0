@@ -79,3 +79,47 @@ export const projects = [
         }
     }
 ]
+
+export const stack = [
+    {
+        langName: 'JavaScript',
+        langLogo: './assets/images/javascript.svg'
+    }
+    , {
+        langName: 'SASS',
+        langLogo: './assets/images/sass.svg'
+    }
+    , {
+        langName: 'Figma',
+        langLogo: './assets/images/figma.svg'
+    }
+    , {
+        langName: 'React',
+        langLogo: './assets/images/react.svg'
+    }
+    , {
+        langName: 'C++',
+        langLogo: './assets/images/c.svg'
+    }
+    , {
+        langName: 'Dynamics',
+        langLogo: './assets/images/microsoft.svg'
+    }
+    , {
+        langName: 'Git',
+        langLogo: './assets/images/git.svg'
+    }
+    , {
+        langName: 'Java',
+        langLogo: './assets/images/java.svg'
+    }
+    , {
+        langName: 'Python',
+        langLogo: './assets/images/python.svg'
+    }
+    , {
+        langName: 'SQL',
+        langLogo: './assets/images/mysql.svg'
+    }
+
+]

@@ -162,6 +162,51 @@ body {
   fill: var(--textColor);
 }
 
+.mobileLinksContainer {
+  position: fixed;
+  z-index: 1000;
+  background: var(--backgroundColor);
+  height: 0%;
+  width: 100%;
+  pointer-events: none;
+}
+.mobileLinksContainer .navLinks {
+  padding: 0 2rem;
+  list-style: none;
+  height: fit-content;
+  margin-top: 4rem;
+}
+.mobileLinksContainer .navLinks li {
+  padding: 0.5rem 0;
+  opacity: 0;
+}
+.mobileLinksContainer .navLinks a {
+  font-size: 35px;
+  color: var(--textColor);
+}
+.mobileLinksContainer hr {
+  width: 0%;
+  margin: 1rem auto;
+}
+.mobileLinksContainer .socials {
+  padding: 0 2rem;
+  list-style: none;
+  height: fit-content;
+}
+.mobileLinksContainer .socials li {
+  padding: 0.5rem 0;
+  opacity: 0;
+}
+.mobileLinksContainer .socials a {
+  color: var(--textColor);
+}
+
+.exitMobileNav {
+  float: right;
+  margin: 0.6rem 1rem;
+  cursor: pointer;
+}
+
 main {
   min-height: 100dvh;
   padding: 4vh 1rem 0;

@@ -1,4 +1,4 @@
-import { experience, projects } from "./objects.js"
+import { experience, projects, stack } from "./objects.js"
 
 
 
@@ -15,31 +15,31 @@ function initializeTheme(){
 initializeTheme()
 
 // ============ burger menu animations ============
-const burgerMenu = document.querySelector('.burgerMenu')
-const mobileNav = document.querySelector('.navLinks')
-const mobileNavLinks = document.querySelectorAll('.navLinks li')
-const navbar = document.querySelector('.siteHeader')
+// const burgerMenu = document.querySelector('.burgerMenu')
+// const mobileNav = document.querySelector('.navLinks')
+// const mobileNavLinks = document.querySelectorAll('.navLinks li')
+// const navbar = document.querySelector('.siteHeader')
 
-burgerMenu.addEventListener('click', ()=>{
-    navbar.classList.toggle('navbarOpen')
-    mobileNav.classList.toggle('openMobileNav')
-})
+// burgerMenu.addEventListener('click', ()=>{
+//     navbar.classList.toggle('navbarOpen')
+//     mobileNav.classList.toggle('openMobileNav')
+// })
 
-mobileNavLinks.forEach((link) => {
-    link.addEventListener('click', ()=>{
-        mobileNav.classList.remove('openMobileNav')
-    })
-})
+// mobileNavLinks.forEach((link) => {
+//     link.addEventListener('click', ()=>{
+//         mobileNav.classList.remove('openMobileNav')
+//     })
+// })
 
 
 // ============ navbar background on scroll =============
-window.onscroll = () => {
-    if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
-        document.querySelector('.siteHeader').classList.add('navScrolled')
-    } else {
-        document.querySelector('.siteHeader').classList.remove('navScrolled')
-    }
-}
+// window.onscroll = () => {
+//     if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
+//         document.querySelector('.siteHeader').classList.add('navScrolled')
+//     } else {
+//         document.querySelector('.siteHeader').classList.remove('navScrolled')
+//     }
+// }
 
 
 
@@ -218,3 +218,20 @@ function renderProjects(toRenderProj){
         }, index * 100)
     })
 }
+
+
+
+// rendering stack languages
+
+const stackList = document.querySelector('.stackList')
+
+
+stack.forEach((lang) => {
+    stackList.innerHTML += `
+        <li class = 'langCard'>
+            <img src = '${lang.langLogo}' alt = '${lang.langName}'>
+            ${lang.langName}
+        </li>
+    `
+})
+

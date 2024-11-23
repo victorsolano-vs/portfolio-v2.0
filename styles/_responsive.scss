@@ -24,7 +24,7 @@
     // main section
     .blob1{
         top: 3%;
-        left: -55%;
+        left: -48%;
     }
     .blob2{
         right: -50%;
@@ -59,7 +59,7 @@
         display: none;
     }
     .categoryList{
-        max-width: 31.25rem;
+        max-width: fit-content;
         position: static;
         opacity: 1;
         pointer-events: all;
@@ -67,6 +67,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 0.5rem;
 
         button{
             transition: background 0.3s ease, color 0.3s ease;
@@ -100,58 +101,71 @@
     }
 
     // navbar
-    .navLinks{
-        position: static;
-        opacity: 1;
-        pointer-events: all;
-        background: none;
-        border-bottom: none;
+    // .navLinks{
+    //     position: static;
+    //     opacity: 1;
+    //     pointer-events: all;
+    //     background: none;
+    //     border-bottom: none;
 
-        flex-direction: row;
-        max-width: fit-content;
-        gap: 3rem;
+    //     flex-direction: row;
+    //     max-width: fit-content;
+    //     gap: 3rem;
 
-        a{
-            padding: 0;
-            font-size:12px;
-            background: none;
-            transition: color 0.3s ease;
+    //     a{
+    //         padding: 0;
+    //         font-size:12px;
+    //         background: none;
+    //         transition: color 0.3s ease;
 
-            &:hover{
-                background: none;
-                color: var(--hoverLinkColor);
-            }
-        }
-        .mobileContactLink{
-            display: none;
-        }
-    }
-
+    //         &:hover{
+    //             background: none;
+    //             color: var(--hoverLinkColor);
+    //         }
+    //     }
+    //     .mobileContactLink{
+    //         display: none;
+    //     }
+    // }
     .burgerMenu{
         display: none;
     }
 
-    .contactBtn{
-        display: inline;
-        font-size: 12px;
-        color: var(--textColor);
-        border: 1px solid var(--textColor);
-        padding: 0.2rem 0.5rem;
-        border-radius: 50px;
-        transition: transform 0.15s ease;
+    .navRight{
+        flex: 0;
+    }
+    .linksContainer{
+        flex: 1;
+        max-width: 350px;
 
-        &:hover{
-            transform: scale(0.95);
+        // background-color: red;
+        .navLinks{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            align-items: center;
+
+            a{
+                font-size: var(--tagFontSize);
+                color: var(--textColor);
+// not done
+                &:hover{
+                    color: red;
+                }
+            }
+            
         }
     }
 
 
+    
+}
+
+@media (min-width: 900px){
     .projectsContainer{
         max-width: 53.125rem;
-        grid-template-columns: 1fr 1fr 1fr;
-
+        // grid-template-columns: 1fr 1fr 1fr;
     }
-    
 }
 @media (min-width: 1024px){
     // main content

@@ -119,17 +119,16 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.navbar div {
+
+.navRight {
   flex: 1;
   display: flex;
-}
-.navbar div:nth-child(2) {
-  align-items: center;
-  justify-content: center;
-}
-.navbar div:nth-child(3) {
   align-items: center;
   justify-content: flex-end;
+}
+
+.logoContainer {
+  flex: 1;
 }
 
 .logo {
@@ -142,8 +141,10 @@ body {
   transform: scale(0.9);
 }
 
-.navLinks {
-  list-style-type: none;
+.linksContainer {
+  flex: 1;
+}
+.linksContainer .navLinks {
   display: none;
 }
 
@@ -661,7 +662,7 @@ main {
 @media (min-width: 480px) {
   .blob1 {
     top: 3%;
-    left: -55%;
+    left: -48%;
   }
   .blob2 {
     right: -50%;
@@ -691,7 +692,7 @@ main {
     display: none;
   }
   .categoryList {
-    max-width: 31.25rem;
+    max-width: fit-content;
     position: static;
     opacity: 1;
     pointer-events: all;
@@ -699,6 +700,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0.5rem;
   }
   .categoryList button {
     transition: background 0.3s ease, color 0.3s ease;
@@ -726,47 +728,33 @@ main {
   .mainContent {
     height: 100dvh;
   }
-  .navLinks {
-    position: static;
-    opacity: 1;
-    pointer-events: all;
-    background: none;
-    border-bottom: none;
-    flex-direction: row;
-    max-width: fit-content;
-    gap: 3rem;
-  }
-  .navLinks a {
-    padding: 0;
-    font-size: 12px;
-    background: none;
-    transition: color 0.3s ease;
-  }
-  .navLinks a:hover {
-    background: none;
-    color: var(--hoverLinkColor);
-  }
-  .navLinks .mobileContactLink {
-    display: none;
-  }
   .burgerMenu {
     display: none;
   }
-  .contactBtn {
-    display: inline;
-    font-size: 12px;
+  .navRight {
+    flex: 0;
+  }
+  .linksContainer {
+    flex: 1;
+    max-width: 350px;
+  }
+  .linksContainer .navLinks {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .linksContainer .navLinks a {
+    font-size: var(--tagFontSize);
     color: var(--textColor);
-    border: 1px solid var(--textColor);
-    padding: 0.2rem 0.5rem;
-    border-radius: 50px;
-    transition: transform 0.15s ease;
   }
-  .contactBtn:hover {
-    transform: scale(0.95);
+  .linksContainer .navLinks a:hover {
+    color: red;
   }
+}
+@media (min-width: 900px) {
   .projectsContainer {
     max-width: 53.125rem;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1024px) {

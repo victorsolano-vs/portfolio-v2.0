@@ -19,20 +19,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 
-    div{
-        flex: 1;
-        display: flex;
-        &:nth-child(2){
-            align-items: center;
-            justify-content: center;
-        }
-        &:nth-child(3){
-            align-items: center;
-            justify-content: flex-end;
-        }
-    }
+.navRight{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
+.logoContainer{
+    flex: 1;
 }
 
 .logo{
@@ -49,10 +46,15 @@
         transform: scale(0.9);
     }
 }
-
+.linksContainer{
+    flex: 1;
+    .navLinks{
+        display: none;
+    }
+}
 .navLinks{
-    list-style-type: none;
-    display: none;
+    // list-style-type: none;
+    // display: none;
     // flex-direction: column;
     // align-items: center;
     // justify-content: space-between;

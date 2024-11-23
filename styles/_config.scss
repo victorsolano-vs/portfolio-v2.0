@@ -4,9 +4,12 @@
     // colors
     --backgroundColor: rgb(255, 255, 255);
     --borderColor: rgb(205, 205, 205);
+
     --textColor: rgb(33, 33, 33);
     --subTextColor: rgb(68, 67, 67);
-    --accentColor: #dbdbdb4d;
+
+    --accentColor: #e7e5e565;
+
     --hoverLinkColor: rgb(100, 99, 99);
     --activeBtnColor: rgb(7,7,7);
     --activeBtnTextColor: #ffff;
@@ -35,9 +38,12 @@
 [data-theme = 'dark']{
     --backgroundColor: rgb(17, 17, 17);
     --borderColor:#787878;
+
     --textColor: rgb(255, 255, 255);
     --subTextColor: rgb(230, 229, 229);
+
     --accentColor: #302f2f65;
+
     --hoverLinkColor: rgb(209, 209, 209);
     --activeBtnColor: rgb(255, 255, 255);
     --activeBtnTextColor: rgb(7,7,7);
@@ -103,5 +109,21 @@ body{
     }
     50% {
       transform: translateY(-30px); /* Move 50px upwards */
+    }
+  }
+
+  
+@keyframes shake {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-3px);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    75% {
+      transform: translateY(-3px);
     }
   }

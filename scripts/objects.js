@@ -65,34 +65,6 @@ export const experience = [
 
 export const projects = [
     {
-        projectName: 'E-commerce Redesign',
-        projectType: 'UI/UX Design',
-        projectDescription: 'A modern redesign of an e-commerce website focusing on user experience and visual appeal.',
-        projectTechStack: [
-            'Figma',
-            'Adobe XD',
-            'Sketch'
-        ],
-        projectLiveLink: 'https://www.ecommerce-redesign.com',
-        projectImages: {
-            thumbnailView: './assets/projects/dribblepic.jpg',
-        }
-    },
-    {
-        projectName: 'Task Manager App',
-        projectType: 'App Development',
-        projectDescription: 'A task management app to help users organize and prioritize their daily tasks effectively.',
-        projectTechStack: [
-            'React Native',
-            'JavaScript',
-            'Expo'
-        ],
-        projectLiveLink: 'https://www.taskmanagerapp.com',
-        projectImages: {
-            thumbnailView: './assets/projects/dribblepic.jpg',
-        }
-    },
-    {
         projectName: 'Primitive Detailing',
         projectType: 'Web Development',
         projectDescription: 'A landing page business website showcasing the details and services for a vehicle detailing business.',
@@ -102,76 +74,6 @@ export const projects = [
             'JavaScript'
         ],
         projectLiveLink: 'https://primitivedetailing.netlify.app/',
-        projectImages: {
-            thumbnailView: './assets/projects/dribblepic.jpg',
-        }
-    },
-    {
-        projectName: 'Social Media Dashboard',
-        projectType: 'UI/UX Design',
-        projectDescription: 'A dashboard for managing and tracking social media analytics, focused on clean UI and accessibility.',
-        projectTechStack: [
-            'Figma',
-            'Adobe XD',
-            'InVision'
-        ],
-        projectLiveLink: 'https://www.socialmedia-dashboard.com',
-        projectImages: {
-            thumbnailView: './assets/projects/dribblepic.jpg',
-        }
-    },
-    {
-        projectName: 'Weather App',
-        projectType: 'App Development',
-        projectDescription: 'A mobile app providing weather forecasts and real-time updates with a user-friendly design.',
-        projectTechStack: [
-            'Flutter',
-            'Dart',
-            'Firebase'
-        ],
-        projectLiveLink: 'https://www.weatherapp.com',
-        projectImages: {
-            thumbnailView: './assets/projects/dribblepic.jpg',
-        }
-    },
-    {
-        projectName: 'Recipe Blog Website',
-        projectType: 'Web Development',
-        projectDescription: 'A website showcasing a variety of recipes with advanced search and filtering options.',
-        projectTechStack: [
-            'React',
-            'CSS',
-            'Node.js'
-        ],
-        projectLiveLink: 'https://www.recipeblog.com',
-        projectImages: {
-            thumbnailView: './assets/projects/dribblepic.jpg',
-        }
-    },
-    {
-        projectName: 'Virtual Art Gallery',
-        projectType: 'UI/UX Design',
-        projectDescription: 'A virtual gallery experience showcasing digital art pieces with immersive visuals.',
-        projectTechStack: [
-            'Adobe XD',
-            'Figma',
-            'Blender'
-        ],
-        projectLiveLink: 'https://www.virtualartgallery.com',
-        projectImages: {
-            thumbnailView: './assets/projects/dribblepic.jpg',
-        }
-    },
-    {
-        projectName: 'Social Media Dashboard',
-        projectType: 'UI/UX Design',
-        projectDescription: 'A dashboard for managing and tracking social media analytics, focused on clean UI and accessibility.',
-        projectTechStack: [
-            'Figma',
-            'Adobe XD',
-            'InVision'
-        ],
-        projectLiveLink: 'https://www.socialmedia-dashboard.com',
         projectImages: {
             thumbnailView: './assets/projects/dribblepic.jpg',
         }

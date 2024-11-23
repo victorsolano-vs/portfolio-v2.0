@@ -203,8 +203,11 @@ body {
 
 .exitMobileNav {
   float: right;
-  margin: 0.6rem 1rem;
+  margin: 0.1rem 1.4rem;
   cursor: pointer;
+}
+.exitMobileNav .exitBtn {
+  opacity: 0;
 }
 
 main {

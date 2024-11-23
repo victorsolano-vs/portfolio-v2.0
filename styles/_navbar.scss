@@ -167,6 +167,10 @@
 
 .exitMobileNav{
     float: right;
-    margin: 0.6rem 1rem;
+    margin: 0.1rem 1.4rem;
     cursor: pointer;
+
+    .exitBtn{
+        opacity: 0;
+    }
 }

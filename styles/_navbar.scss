@@ -43,6 +43,7 @@
     ;
 
     &:hover{
+        color: red;
         transform: scale(0.9);
     }
 }
@@ -52,54 +53,7 @@
         display: none;
     }
 }
-.navLinks{
-    // list-style-type: none;
-    // display: none;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: space-between;
-    // gap: 0.5rem;
 
-    // position: absolute;
-    // top: 100%;
-    // left: 0;
-    // width: 100%;
-    // z-index: 998;
-    // pointer-events: none;
-    // opacity: 0;
-
-    // transition: opacity 0.5s ease, 
-    //     bacground $transitionDuration ease
-    // ;
-
-    // background: var(--backgroundColor);
-    // border-bottom: 1px var(--borderColor) solid;
-
-    // a{
-    //     width: 100%;
-    //     display: block;
-    //     padding: 1rem;
-    //     color: var(--textColor);
-
-    //     transition: 
-    //         background 0.3s ease,
-    //         color $transitionDuration ease
-    //     ;
-    //     &:hover{
-    //         background: var(--accentColor);
-    //     }
-    // }
-
-    // li{
-    //     width: 100%;
-    //     text-align: center;
-    // }
-}
-
-// .openMobileNav{
-//     opacity: 1;
-//     pointer-events: all;
-// }
 
 .burgerMenu{
     cursor: pointer;

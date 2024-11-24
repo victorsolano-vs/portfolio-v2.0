@@ -8,6 +8,7 @@
   --hoverLinkColor: rgb(100, 99, 99);
   --activeBtnColor: rgb(7,7,7);
   --activeBtnTextColor: #ffff;
+  --hrColor: #d4d4d4;
   --logoSize: 1rem;
   --mainHeading: 2rem;
   --tagFontSize: 0.75rem;
@@ -186,7 +187,12 @@ body {
 }
 .mobileLinksContainer hr {
   width: 0%;
+  opacity: 0;
   margin: 1rem auto;
+  transform-origin: left;
+  border: none;
+  background: var(--hrColor);
+  height: 2px;
 }
 .mobileLinksContainer .socials {
   padding: 0 2rem;

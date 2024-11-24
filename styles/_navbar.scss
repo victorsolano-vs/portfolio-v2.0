@@ -146,7 +146,12 @@
 
     hr{
         width: 0%;
+        opacity: 0;
         margin: 1rem auto;
+        transform-origin: left;
+        border: none;
+        background:var(--hrColor) ;
+        height: 2px;
     }
 
     .socials{

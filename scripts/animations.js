@@ -1,6 +1,6 @@
 const navbarToggler = document.querySelector('.burgerMenu')
 const mobileNav = document.querySelector('.mobileLinksContainer')
-const navbarLinks = document.querySelector('.mobileLink')
+const navbarLinks = document.querySelectorAll('.mobileLink')
 
 const mobileExit = document.querySelector('.exitBtn')
 
@@ -17,6 +17,14 @@ tl.to(".mobileLink", {
   opacity: 1,
   stagger: 0.1
 }, "-=1");
+tl.to('.mobileNavSeparator', {
+    width: '70%',
+    opacity: 1
+}, '-=0.9')
+tl.to('.mobileSocials', {
+    opacity: 1,
+    stagger: 0.1
+}, '-=0.9')
 tl.to(".exitBtn", {
   opacity: 1,
   y: "5px"

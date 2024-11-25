@@ -148,9 +148,9 @@
             a{
                 font-size: var(--tagFontSize);
                 color: var(--textColor);
-// not done
+                transition: color 0.2s ease;
                 &:hover{
-                    color: red;
+                    color: var(--hoverLinkColor);
                 }
             }
             

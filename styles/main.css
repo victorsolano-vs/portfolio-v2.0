@@ -802,9 +802,10 @@ main {
   .linksContainer .navLinks a {
     font-size: var(--tagFontSize);
     color: var(--textColor);
+    transition: color 0.2s ease;
   }
   .linksContainer .navLinks a:hover {
-    color: red;
+    color: var(--hoverLinkColor);
   }
 }
 @media (min-width: 900px) {

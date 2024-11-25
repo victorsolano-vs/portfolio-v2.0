@@ -14,32 +14,15 @@ function initializeTheme(){
 }
 initializeTheme()
 
-// ============ burger menu animations ============
-// const burgerMenu = document.querySelector('.burgerMenu')
-// const mobileNav = document.querySelector('.navLinks')
-// const mobileNavLinks = document.querySelectorAll('.navLinks li')
-// const navbar = document.querySelector('.siteHeader')
-
-// burgerMenu.addEventListener('click', ()=>{
-//     navbar.classList.toggle('navbarOpen')
-//     mobileNav.classList.toggle('openMobileNav')
-// })
-
-// mobileNavLinks.forEach((link) => {
-//     link.addEventListener('click', ()=>{
-//         mobileNav.classList.remove('openMobileNav')
-//     })
-// })
-
 
 // ============ navbar background on scroll =============
-// window.onscroll = () => {
-//     if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
-//         document.querySelector('.siteHeader').classList.add('navScrolled')
-//     } else {
-//         document.querySelector('.siteHeader').classList.remove('navScrolled')
-//     }
-// }
+window.onscroll = () => {
+    if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
+        document.querySelector('.navbar').classList.add('navScrolled')
+    } else {
+        document.querySelector('.navbar').classList.remove('navScrolled')
+    }
+}
 
 
 

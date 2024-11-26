@@ -40,3 +40,61 @@ navbarLinks.forEach(item => {
     tl.reverse(.9);
   })
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  gsap.registerPlugin(ScrollTrigger)
+
+  // animations for main section on load
+  var tl = gsap.timeline()
+
+  tl.from('.logo, .burgerMenu, .linksContainer li', {
+    delay:0.2,
+    opacity: 0,
+    duration: 0.3,
+    stagger: 0.1
+  })
+
+  .from('.mainContent h1', {
+    opacity: 0,
+    duration: 0.2
+  })
+  .from('.tag', {
+    duration: 0.9, 
+    stagger: 0.1,
+    ease: Expo.easeInOut,
+    opacity: 0
+  })
+  .from('.aboutMeText',{
+    y: '10px',
+    opacity: 0,
+    duration: 0.5
+  })
+
+  .from('.socialLinks a', {
+    y: '10px',
+    opacity: 0,
+    stagger: 0.1
+  })
+  .from('.myStack h3', {
+    opacity: 0
+  })
+  .from('.langCard', {
+    y: '10px',
+    opacity: 0,
+    stagger: 0.1
+  })
+  .from('.blob', {
+    opacity: 0,
+    stagger: 0.1
+  })
+
+  .from('.location, .themeToggle', {
+    y: '10px',
+    opacity: 0,
+    stagger: 0.1
+  })
+
+})

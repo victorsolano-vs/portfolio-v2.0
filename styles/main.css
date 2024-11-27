@@ -203,6 +203,13 @@ body {
 .mobileLinksContainer .socials li {
   padding: 0.5rem 0;
   opacity: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mobileLinksContainer .socials svg {
+  width: 18px;
+  height: 18px;
 }
 .mobileLinksContainer .socials a {
   color: var(--textColor);
@@ -210,11 +217,15 @@ body {
 
 .exitMobileNav {
   float: right;
-  margin: 0.1rem 1.4rem;
+  margin: 0.1rem 1rem;
+  margin-top: 0.3rem;
   cursor: pointer;
 }
 .exitMobileNav .exitBtn {
   opacity: 0;
+  fill: var(--textColor);
+  width: 20px;
+  height: 20px;
 }
 
 main {

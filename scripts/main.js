@@ -166,7 +166,7 @@ function renderProjects(toRenderProj){
             portfolioHTML += `
                 <div class="projectCard">
                 <div class="projectIMGContainer">
-                        <img src="${project.projectImages.thumbnailView}" alt="" loading = 'lazy'>
+                        <img src="${project.projectImage}" alt="" loading = 'lazy'>
                     </div>
                     <div class = 'cardTitle'>
                         <h6>${project.projectName}</h6>
@@ -185,7 +185,7 @@ function renderProjects(toRenderProj){
                     <div class="projectLinks">
                         <a target = '_blank' href="${project.projectLiveLink}">${project.projectType === 'UI/UX Design' ? 'View Design' : 'Live Demo' }</a>
 
-                        <a target = '_blank' href ="">${project.projectType === 'UI/UX Design' ? 'Case Study' : 'Source Code'}</a>
+                        <a target = '_blank' href ="${project.projectSourceLink}">${project.projectType === 'UI/UX Design' ? 'Case Study' : 'Source Code'}</a>
                     </div>
                 </div>
             `

@@ -74,9 +74,8 @@ export const projects = [
             'JavaScript'
         ],
         projectLiveLink: 'https://primitivedetailing.netlify.app/',
-        projectImages: {
-            thumbnailView: './assets/projects/dribblepic.jpg',
-        }
+        projectSourceLink: 'https://github.com/victorsolano-vs/primitivedetailing',
+        projectImage: './assets/projects/dribblepic.jpg'
     }
 ]
 

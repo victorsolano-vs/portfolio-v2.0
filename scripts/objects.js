@@ -75,7 +75,7 @@ export const projects = [
         ],
         projectLiveLink: 'https://primitivedetailing.netlify.app/',
         projectSourceLink: 'https://github.com/victorsolano-vs/primitivedetailing',
-        projectImage: './assets/projects/dribblepic.jpg'
+        projectImage: './assets/projects/primitiveDetailing.jpg'
     }
 ]
 

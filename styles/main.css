@@ -210,6 +210,7 @@ body {
 .mobileLinksContainer .socials svg {
   width: 18px;
   height: 18px;
+  fill: var(--textColor);
 }
 .mobileLinksContainer .socials a {
   color: var(--textColor);
